@@ -1,0 +1,8 @@
+<h2><%= @task.name %></h2>
+
+<%= link_to 'update the task', edit_task_path %>
+<%= link_to "Delete the task", task_path(@task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+
+<%= link_to 'Go to your todo list', tasks_path %>
